@@ -10,17 +10,20 @@ public class SendMailWithAttachment {
 
 	  public static void main(String[] args) throws IOException, InterruptedException {
 
-			  Scanner kb = new Scanner(System.in); System.out.println("enter ur id: ");
-			  String id = kb.nextLine(); System.out.println("enter ur pass: "); String
+			  Scanner kb = new Scanner(System.in); 
+		          System.out.println("enter ur id: ");
+			  String id = kb.nextLine(); 
+		          System.out.println("enter ur pass: "); String
 			  password = kb.nextLine();
 			  System.out.println("enter email-id to whom u want to send the mail: ");
-			  String toId = kb.nextLine(); System.out.println("enter subject for mail: ");
+			  String toId = kb.nextLine(); 
+		          System.out.println("enter subject for mail: ");
 			  String subject = kb.nextLine();
-			  System.out.println("enter the content of the mail: "); String content
-			  =kb.nextLine();
+			  System.out.println("enter the content of the mail: ");
+		          String content=kb.nextLine();
 
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\nsa2\\Desktop\\Automation\\chromedriver.exe");
-			WebDriver driver = new ChromeDriver();
+		 System.setProperty("webdriver.chrome.driver", "C:\\Users\\nsa2\\Desktop\\Automation\\chromedriver.exe");
+		 WebDriver driver = new ChromeDriver();
 		  
 		// open Gmail
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
